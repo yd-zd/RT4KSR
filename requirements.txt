@@ -1,9 +1,10 @@
 opencv-python==4.6.0.66
 pillow==9.2.0
-scikit-image==0.19.3                
+# scikit-image==0.19.3                
 timm==0.6.12
-numpy
+numpy==1.26.4
 scipy
+scikit-image
 tqdm
 wandb
 matplotlib

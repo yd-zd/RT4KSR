@@ -59,6 +59,24 @@ You can find all the necessary details of testing the models in `test.py`. The a
 python code/test.py --dataroot [DATAROOT] --checkpoint-id rt4ksr_[x2|x3] --scale [x2|x3] --arch rt4ksr_rep --benchmark ntire23rtsr --is-train
 ````
 
+### Quick Inference (Added for Convenience)
+For quick single-image upscaling and performance testing, we provide an enhanced inference script:
+
+````
+python code/inference.py --input [IMAGE_PATH] --output [OUTPUT_PATH] --scale [2|3]
+````
+
+**Features:**
+- Single image processing with automatic output naming (`input--2x.png`)
+- Optional output path specification
+- Built-in performance benchmarking capabilities
+
+**Example:**
+````
+python code/inference.py --input image.png --scale 2
+# Outputs: image--2x.png (auto-generated filename)
+````
+
 ---
 ## [NTIRE 2023 4K RTSR Benchmark](https://github.com/eduardzamfir/NTIRE23-RTSR)
 
